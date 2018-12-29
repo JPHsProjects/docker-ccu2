@@ -10,8 +10,9 @@ Support for CCU2 has been removed from the HEAD. Please checkout the [ccu2 branc
 ## How to deploy
 
  1. ssh into the target computer (better an ARM device)
- 2. git clone this repository
- 3. (Optional) `cp -a settings.template settings` and edit `settings.template`
+ 2. git clone this repository with `git clone https://github.com/angelnu/docker-ccu2.git`
+ 3. `cd docker-ccu2`
+ 3. (Optional) `cp -a settings.template settings` and edit `settings`
  4. `sudo ./deploy.sh`
     - you can also use env variables such as `MAYOR_CCU_VERSION=2` to deploy a CCU2 firmware. See [settings.template](settings.template) for all available options
 
